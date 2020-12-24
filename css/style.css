@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Raleway Light';
+    src: URL('/static/Raleway-Light.ttf') format('truetype');
+}
+
+* {
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Raleway Light', Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anim,
+.anim svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.anim path {
+    stroke-width: .5;
+}
+
+.hero-container {
+    z-index: 3;
+    margin-top: 80px;
+}
+
+.hero {
+    color: white;
+    user-select: none;
+}
+
+.hero-title {}
+
+.name {}
+
+.notice {}
+
+.contact {}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.zenbtn {
+    background: #ffffff;
+    padding: 3px 20px;
+    border-radius: 0;
+    display: inline-block;
+    border: none;
+    /* box-shadow: 0px 0px 40px rgba(0, 255, 13, 0.432); */
+    transition: all 0.3s ease-in-out 0s;
+    color: #0e0e0e;
+}
+
+.zenbtn:hover {
+    /* background: rgb(0, 255, 13); */
+    background: rgb(0, 247, 255);
+    transition: all .6s;
+    /* box-shadow: 0px 0px 40px rgba(0, 247, 255, 0.432); */
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    color: #0e0e0e;
+}
+
+.footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 110px) {
+    h1 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    p {
+        font-size: 9px;
+    }
+    .zenbtn {
+        margin-top: 90px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 256px) {
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .zenbtn {
+        margin-top: 120px;
+    }
+}
+
+@media (min-width: 462px) {
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .zenbtn {
+        margin-top: 90px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 620px) {
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 32px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
